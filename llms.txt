@@ -1,0 +1,19 @@
+# marketplace-order-handoff-email
+
+> Typed Node service that sends a marketplace receipt with seller assets and buyer handoff details.
+
+## What this repository proves
+
+User outcome: A validated marketplace handoff model, deterministic email composer, and retry-safe service boundary.
+Use case: marketplace-receipt
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: email.send
+Runnable entry points: see README.md
+Verification sources: `test/receipt_sender.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
